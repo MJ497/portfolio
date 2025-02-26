@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web designer, web developer</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section>
+        <div class="blur">
+            <header>
+                <h2 class="logo">MJ <i class="bx bx-code-alt"></i></h2>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="bx bx-menu"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="web.html">Web</a></li>
+                    <li><a href="figma.html">Figma</a></li>
+                    <div class="button">
+                        <a href="cv's.docx" download="cv's.docx" class="bt1">Download CV</a>
+                        <a href="Copy of Otubonchi's Resume (1).pdf" download="Copy of Otubonchi's Resume (1).pdf" class="bt2">Download Resume</a>
+                    </div>
+                </ul>
+              
+            </header>
+            <main class="home">
+                <h1>{ Hi, i'm Macjohnson }</h1>
+                <p>I'm a front-end developer , i build mordernized websites and web applications<br> i also create user friendly designs to match my clients prefrences.</p>
+                <button class="bt2" onclick="profilemodal()"> Learn More</button>
+                <div class="soc">
+                    <a href="https://www.linkedin.com/in/macj497/"> <abbr title="linkedin"><i class="bx bxl-linkedin"></i></abbr></a>
+                    <a href="https://github.com/MJ497"> <abbr title="github"><i class="bx bxl-github"></i></abbr></a>
+                    <a href="https://x.com/MacJohnson92820"> <abbr title="twitter"><i class="bx bxl-twitter"></i></abbr></a>
+                    <a href="https://www.behance.net/macjohnson7"> <abbr title="behance"><i class="bx bxl-behance"></i></abbr></a>
+                </div>
+                <div class="img">  <img src="img/iic.png" ></div>
+                <!-- modal window -->
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <h2>Profile</h2>
+                        <div class="area">
+                            <img src="img/port.png" alt="">
+                            <span>
+                                <p>Hi, i'm Macjohnson, a front-end developer, i build mordernized websites and web applications, i also create user friendly designs to match my clients prefrences.i am a creative thinker when it comes to problem solving and i love working in a team because it makes any woek easy and i get to learn new things from my team mates</p>
+                                <div class="skills">
+                                    <h2>Skills</h2>
+                                    <p>My skills include: </p>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>React</li>
+                                        <li>Figma</li>
+                                        <li>Flask</li>
+                                        <li>Python</li>
+                                        <li>bootstrap</li>
+                                    </ul>
+                                    <h2>Education</h2>
+                                    <div>    
+                                        <p>Advance diplpma in software Engineering(ADSE)</p>
+                                        <p>Aptech computer learning </p>
+                                        <small>2022 - 2024</small>
+                                    </div>
+                                    <div>   
+                                        <p>Bsc. in mechanical Engineering</p>
+                                        <p>university of calabar</p>
+                                        <small>2021 - to date</small>
+                                    </div>
+                                    <h2>Experience</h2>
+                                    <p>I have 2+years of experince with my different skills mostly freelance works. I am currently a tutor at Aptech Arena multimedia  Nigeria as  a faculty. </p>
+                                    <div style="display: flex; flex-direction: row; width: 100%; height: auto; justify-content: space-between;">
+                                        <div>   
+                                            <p>Web designer</p>
+                                            <p>23Devs</p>
+                                            <small>2023 - 2023</small>
+                                        </div>
+                                        <div>   
+                                            <p>Aptech Multimedia arena</p>
+                                            <p>university of calabar</p>
+                                            <small>2024 - to date</small>
+                                        </div> 
+                                        <div class="button">
+                                            <a href="web.html"><button class="bt1">view web projects</button></a>
+                                            <a href="figma.html"><button class="bt2">view figma designs</button></a>  
+                                        </div> 
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+    <script>
+        // modal window
+        function profilemodal(){
+            document.querySelector('.modal').style.display = 'flex';
+        }
+
+        document.querySelector('.close-button').addEventListener('click', function(){
+            document.querySelector('.modal').style.display = 'none';
+        })
+
+        // toggle menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
