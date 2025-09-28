@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:ital,wght@0,100..900;1,100..900&display=swap');
-    *{
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+   *{
     margin: 0;
     padding: 0;
     border: none;
@@ -7,7 +7,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: "Outfit", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-style: normal;
     
 
@@ -108,8 +108,9 @@ ul li a:hover{
 .bt1{
     padding: 12px;
     color: white;
-    background: linear-gradient(45deg, #ff6600, #d32304c2);
+    background:  #d32304c2;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .bt2{
@@ -256,7 +257,7 @@ main .soc{
 }
 
 main.web{
-    height: 150vh;
+    height: auto;
     background-color: #171717;
 }
 .projects
@@ -282,8 +283,8 @@ main.web{
     align-items: start;
     justify-content: space-around;
     flex-direction: column;
-    background-color: #2e2d2d;
-    border :1px solid #ffffff15;
+    /* background-color: #2e2d2d; */
+    /* border :1px solid #ffffff15; */
     border-radius: 8px;
     gap: 8px;
 }
